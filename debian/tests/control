@@ -1,5 +1,6 @@
 Tests: unittest
 Depends:  
     python3-pip,
+    python3-setuptools,
     python3-pytest,
     dummypackage
