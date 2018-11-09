@@ -1,2 +1,2 @@
-pip install -e .[test]
-py.test
+pip3 install -e .[test]
+py.test-3
