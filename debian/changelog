@@ -1,3 +1,22 @@
+dummypackage (0.1-2) UNRELEASED; urgency=medium
+
+  [ Iñaki Malerba ]
+  * New upstream version 0.1
+  * Fix unittest
+  * Add copyright
+  * Fix test dependency
+  * Move to python2
+  * Move debhelper version from 11 to 9. It's necessary to build for jessie and stretch.
+  * Refactor dummypackage to drop click dependency
+
+  [ Salsa Pipeline ]
+  * Update salsa CI pipeline
+
+  [ You-Sheng Yang (楊有勝) ]
+  * autopkgtest: disable pip3 version checks
+
+ -- Iñaki Malerba <inaki@malerba.space>  Mon, 26 Aug 2019 16:57:53 +0200
+
 dummypackage (0.1-1) unstable; urgency=medium
 
   * Initial release.
