@@ -1,4 +1,4 @@
-Tests: unittest
+Tests: unittest, cli
 Depends:  
     python3-pip,
     python3-setuptools,
