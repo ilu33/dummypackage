@@ -1,13 +1,13 @@
-# Skeleton of a CLI
-
-import click
-
-import dummypackage
+import argparse
 
 
-@click.command('dummypackage')
-@click.argument('count', type=int, metavar='N')
-def cli(count):
-    """Echo a value `N` number of times"""
-    for i in range(count):
-        click.echo(dummypackage.has_legs)
+def do_something(word):
+    return word.upper()
+
+def cli():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("echo")
+    args = parser.parse_args()
+    print(
+        do_something(args.echo)
+    )

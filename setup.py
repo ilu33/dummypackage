@@ -10,14 +10,11 @@ setup(name='dummypackage',
       keywords='',
       author=u"Iñaki Malerba",
       author_email='inaki@malerba.space',
-      url='https://salsa.debian.org/salsa-ci-package/pipeline',
+      url='https://salsa.debian.org/salsa-ci-package/dummypackage',
       license='GPL',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          'click'
-      ],
       extras_require={
           'test': ['pytest'],
       },
