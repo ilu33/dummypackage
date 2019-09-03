@@ -1,2 +1,6 @@
-pip3 install --disable-pip-version-check -e .[test]
+#!/bin/sh
+
+PIP3_DISABLE_VERSION_CHECK_ARG=--disable-pip-version-check
+(pip3 --help | grep -- ${PIP3_DISABLE_VERSION_CHECK_ARG}) || PIP3_DISABLE_VERSION_CHECK_ARG=
+pip3 install ${PIP3_DISABLE_VERSION_CHECK_ARG} -e .[test]
 py.test-3
