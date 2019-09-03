@@ -1,10 +1,13 @@
-from click.testing import CliRunner
+import os
+import pexpect
+import unittest
 
-from dummypackage.scripts.cli import cli
+class Test(unittest.TestCase):
+    def test_cli_count(self):
+        count = 3
+        p = pexpect.spawn('dummypackage ' + str(count))
+        self.assertEqual(0, p.expect(pexpect.EOF))
+        self.assertEqual(p.before, b'False\r\n' * count)
 
-
-def test_cli_count():
-    runner = CliRunner()
-    result = runner.invoke(cli, ['3'])
-    assert result.exit_code == 0
-    assert result.output == "False\nFalse\nFalse\n"
+if __name__ == '__main__':
+    unittest.main()
