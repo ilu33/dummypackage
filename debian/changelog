@@ -1,7 +1,7 @@
-dummypackage (2:0.0.2-1) UNRELEASED; urgency=medium
+dummypackage (0.2-1) UNRELEASED; urgency=medium
 
   [ Iñaki Malerba ]
-  * New upstream version 0.0.2
+  * New upstream version 0.2
   * Fix unittest
   * Add copyright
   * Fix test dependency
