@@ -1,0 +1,3 @@
+# dummy override to test how pipeline shows overrides
+# we don't intend to write a man page
+dummypackage: no-manual-page usr/bin/dummypackage
